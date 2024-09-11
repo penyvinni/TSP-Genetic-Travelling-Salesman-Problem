@@ -62,8 +62,8 @@ The Genetic Algorithm used in this project follows these core steps:
 ## Visualization
 The project includes a visualization function to display the optimal solution found by the Genetic Algorithm. The cities are represented as nodes, and the optimal path is visualized as directed edges.
     ```python
-    def plot_path(cost_matrix, optimal_solution, all_connections=False):
-       # Visualizes the optimal solution on a graph
+          def plot_path(cost_matrix, optimal_solution, all_connections=False):
+             # Visualizes the optimal solution on a graph
 
 
 
