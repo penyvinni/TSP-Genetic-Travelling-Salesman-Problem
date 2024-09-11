@@ -8,7 +8,6 @@ This project implements a Genetic Algorithm (GA) to solve the Travelling Salesma
 - [Genetic Algorithm Overview](#genetic-algorithm-overview)
 - [Algorithm Steps](#algorithm-steps)
 - [Visualization](#visualization)
-- [Usage](#usage)
 - [Conclusions](#conclusions)
 
 ## Introduction
@@ -53,11 +52,6 @@ The Genetic Algorithm used in this project follows these core steps:
    def mutate(offspring, mutation_rate):
        # Mutates offspring based on the mutation rate
 
-5. **Main Genetic Algorithm**: 
-   The process is repeated for a fixed number of generations.
-   ```python
-   def genetic_algorithm(num_generations, population_size, crossover_rate, mutation_rate, num_cities, elitism=True):
-       # Executes the genetic algorithm
 
 ## Visualization
 The project includes a visualization function to display the optimal solution found by the Genetic Algorithm. The cities are represented as nodes, and the optimal path is visualized as directed edges.
