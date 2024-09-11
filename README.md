@@ -43,18 +43,18 @@ The Genetic Algorithm used in this project follows these core steps:
    def select_parents(population, cost_matrix):
        # Returns a list of selected parents
 
- 4. **Crossover and Mutation:**: 
+4. **Crossover and Mutation:**: 
    Perform crossover between parents and apply mutations to the offspring.
    ```python
    def crossover(parent1, parent2):
-       # Returns two offspring after crossover
+       Returns two offspring after crossover
 
 
 ## Visualization
 The project includes a visualization function to display the optimal solution found by the Genetic Algorithm. The cities are represented as nodes, and the optimal path is visualized as directed edges.
 ```python
    def plot_path(cost_matrix, optimal_solution, all_connections=False):
-       # Visualizes the optimal solution on a graph
+       Visualizes the optimal solution on a graph
 
 
 ## Conclusions
