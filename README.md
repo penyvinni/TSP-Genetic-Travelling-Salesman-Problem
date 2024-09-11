@@ -31,3 +31,42 @@ The Genetic Algorithm used in this project follows these core steps:
    ```python
    def generate_population(num_individuals, num_cities):
        # Returns a list of chromosomes
+   
+2. **Fitness Calculation**: 
+   The fitness of each chromosome is the inverse of the total path cost.
+   ```python
+   def calculate_fitness(chromosome, cost_matrix):
+       # Returns the fitness value of a chromosome
+
+3. **Selection**: 
+   Select parents based on their fitness using roulette wheel selection.
+   ```python
+   def select_parents(population, cost_matrix):
+       # Returns a list of selected parents
+
+ 4. **Crossover and Mutation:**: 
+   Perform crossover between parents and apply mutations to the offspring.
+   ```python
+   def crossover(parent1, parent2):
+       # Returns two offspring after crossover
+    
+   def mutate(offspring, mutation_rate):
+       # Mutates offspring based on the mutation rate
+
+5. **Main Genetic Algorithm**: 
+   The process is repeated for a fixed number of generations.
+   ```python
+   def genetic_algorithm(num_generations, population_size, crossover_rate, mutation_rate, num_cities, elitism=True):
+       # Executes the genetic algorithm
+
+## Visualization
+The project includes a visualization function to display the optimal solution found by the Genetic Algorithm. The cities are represented as nodes, and the optimal path is visualized as directed edges.
+```python
+   def plot_path(cost_matrix, optimal_solution, all_connections=False):
+       # Visualizes the optimal solution on a graph
+
+
+## Conclusions
+This project demonstrates how Genetic Algorithms can effectively solve the Travelling Salesman Problem. By simulating the process of natural evolution, GAs can find near-optimal solutions in a reasonable amount of time. Further improvements can be made by tweaking the parameters such as population size, mutation rate, crossover strategy, and the use of elitism.
+
+This solution can be adapted for different optimization problems, such as airport routing, logistics, or any other pathfinding scenario.
