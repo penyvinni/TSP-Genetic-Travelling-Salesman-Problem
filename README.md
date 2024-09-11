@@ -48,9 +48,6 @@ The Genetic Algorithm used in this project follows these core steps:
    ```python
    def crossover(parent1, parent2):
        # Returns two offspring after crossover
-    
-   def mutate(offspring, mutation_rate):
-       # Mutates offspring based on the mutation rate
 
 
 ## Visualization
